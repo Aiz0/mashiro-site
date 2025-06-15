@@ -34,7 +34,7 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
       - name: Install, build, and upload your site output
-        uses: radenpioneer/astro-ftp-deploy@v0.1.1
+        uses: radenpioneer/astro-ftp-deploy@7339df7ba48289a4fef92cdc1cfb45fe32a744b9
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
