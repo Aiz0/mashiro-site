@@ -1,16 +1,34 @@
 ---
+import "./src/styles/global.css";
 
+import { Image } from "astro:assets";
+import mashiroShiinaPeeking from "../assets/mashiro-shiina-peeking.png";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Mashiro Shiina</title>
+    </head>
+    <body class="w-screen h-screen bg-sky-500 text-white">
+        <!-- <h1 class="text-6xl font-semibold text-center p-16">
+            Mashiro Shiina
+        </h1> -->
+        <main class="flex justify-center items-center h-full">
+            <div>
+                <span class="text-8xl text-[#EA4A90] font-display text-outline"
+                    >WIP</span
+                >
+            </div>
+        </main>
+
+        <Image
+            class="fixed bottom-0"
+            src={mashiroShiinaPeeking}
+            alt="Mashiro Shiina peeking from the side of the screen"
+        />
+    </body>
 </html>

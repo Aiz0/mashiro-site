@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: Alba;
+    font-display: swap;
+    font-style:;
+    src: url("/fonts/ALBA____.TTF");
+}
+
+@theme {
+    --font-display: "Alba", "sans-serif";
+}
+
+@utility text-stroke-white {
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 0.25rem;
+}
+
+@utility text-outline {
+    -webkit-text-stroke: 1.45rem white;
+    paint-order: stroke fill;
+}
