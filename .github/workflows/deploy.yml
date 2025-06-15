@@ -24,7 +24,7 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
       - name: Run checks
-        uses: radenpioneer/astro-check@v0.1.2
+        uses: radenpioneer/astro-check@88faca8759eb29990ccd6dc2dfa9ec72e5af2893
         with:
           check-command: "check"
   build:
